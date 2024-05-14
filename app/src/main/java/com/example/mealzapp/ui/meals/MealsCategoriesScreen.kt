@@ -70,6 +70,7 @@ fun MealCategory(meal: MealResponse, navigationCallback: (String) -> Unit) {
     ) {
         Row(modifier = Modifier.animateContentSize()) {
             //Add Image here
+
             Image(
                 painter = rememberAsyncImagePainter(model = meal.imageUrl),
                 contentDescription = "Picture of meals",
